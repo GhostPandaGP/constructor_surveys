@@ -1,0 +1,172 @@
+.adder_icon
+{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ecf0f1;
+    opacity: .5;
+    transition: .3s;
+}
+
+.adder_icon i
+ {
+     z-index: 1;
+     color: #27ae60;
+     background: #ecf0f1;
+    cursor: pointer;
+    font-size: 14px;
+ }
+
+.adder_icon:before
+{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #27ae60;
+    position: absolute;
+    cursor: pointer;
+}
+
+.adder_icon:hover
+{
+    opacity: 1;
+}
+
+.adder_wrapper {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adder_show
+{
+    display: flex;
+}
+
+.adder_component {
+    cursor: pointer;
+    height: 30px;
+    width: calc(100% / 6);
+}
+
+
+
+.adder_modal_menu
+{
+    /*display: none;*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 15, 15, .9);
+    /*opacity: .9;*/
+    right: 0;
+    top: -120%;
+    text-align: center;
+    /*padding: 50px 0;*/
+    line-height: normal;
+    z-index: 1000;
+    transition: 0.7s;
+}
+
+.adder_modal_show
+{
+    top: 0;
+}
+
+.adder_modal_container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 20px;
+    background: #ecf0f1;
+    font-size: 20px;
+    width: 600px;
+    opacity: 1;
+}
+
+.adder_modal_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.adder_modal_header_icon
+{
+    cursor: pointer;
+}
+
+.adder_modal_header i:hover
+{
+    color: #e74c3c;
+}
+
+/* Style inputs, select elements and textareas */
+.adder_modal_row input[type=text], .adder_modal_row select, .adder_modal_row textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+.adder_modal_row  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+.adder_modal_row  input[type=submit] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.adder_modal_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.adder_modal_col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.adder_modal_col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.adder_modal_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .adder_modal_col-25, .adder_modal_col-75, .adder_modal_row  input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

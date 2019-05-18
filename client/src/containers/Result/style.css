@@ -1,0 +1,14 @@
+.result_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+
+}
+.result_chart_container
+{
+    height: auto;
+    width: auto;
+    background: #eee;
+}

@@ -1,0 +1,24 @@
+.constructor_wrapper
+{
+    width: 650px;
+    margin: auto;
+    border: 5px solid #27ae60;
+    border-top: 15px solid #27ae60;
+    /*border: 1px solid #000000;*/
+    /*border-radius: 20px;*/
+    padding: 40px 100px;
+    background: #eee;
+    /*box-sizing: border-box;*/
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+@media screen and (max-width: 800px) {
+    .constructor_wrapper
+    {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}

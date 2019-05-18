@@ -1,0 +1,34 @@
+.drop__down__list_wrapper
+{
+    padding: 20px 0;
+    transition: .5s;
+}
+
+.drop__down__list_select-wrapper
+{
+    padding: 10px 20px;
+}
+
+.drop__down__list_select
+{
+    min-width: 300px;
+    width: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.drop__down__list_title
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.drop__down__list_subtitle
+{
+    font-size: 15px;
+    color: #333;
+    padding: 0 5px;
+}

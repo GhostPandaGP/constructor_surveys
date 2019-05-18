@@ -1,0 +1,182 @@
+.constructor__layout_wrapper_main
+{
+    /*background: #0F2027;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #2C5364, #203A43, #0F2027); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #FFEFBA;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #FFFFFF, #FFEFBA); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+
+    padding: 40px 0;
+}
+
+.constructor__layout_wrapper
+{
+    width: 630px;
+    margin: auto;
+    border: 5px solid #2980b9;
+    border-top: 15px solid #2980b9;
+    /*border: 1px solid #000000;*/
+    /*border-radius: 20px;*/
+    padding: 40px 100px;
+    background: #eee;
+}
+.constructor__layout_nav
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    height: 45px;
+    /*background: #2c3e50;*/
+    background: #27ae60;
+}
+.constructor__layout_menu
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.constructor__layout_menu_element {
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+.constructor__layout_menu_element a
+{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.constructor__layout_menu:hover .constructor__layout_menu_element a
+{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(3px);
+}
+.constructor__layout_menu .constructor__layout_menu_element a:hover
+{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+.constructor__layout_menu_element a:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #2980b9;*/
+    background: #16a085;
+    transition: transform .5s;
+    transform-origin: right;
+    transform: scale(0);
+    z-index: -100;
+}
+.constructor__layout_menu_element a:hover:before
+{
+    transition: transform .5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.constructor__layout_show-menu-btn, .constructor__layout_hide-menu-btn
+{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.constructor__layout_show-menu-btn
+{
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.constructor__layout_show-menu-btn i
+{
+    line-height: 100px;
+}
+
+.constructor__layout_show-menu-btn:hover, .constructor__layout_hide-menu-btn:hover
+{
+    color: #2ecc71;
+}
+
+#chk
+{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width: 800px) {
+    .constructor__layout_show-menu-btn, .constructor__layout_hide-menu-btn
+    {
+        display: block;
+    }
+    .constructor__layout_menu
+    {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        opacity: .9;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 50px 0;
+        line-height: normal;
+        z-index: 1000;
+        transition: 0.7s;
+    }
+    .constructor__layout_menu_element a:hover:before
+    {
+        transform: scaleX(0);
+    }
+    .constructor__layout_menu:hover .constructor__layout_menu_element a
+    {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+    .constructor__layout_menu_element a:hover
+    {
+        color: #2ecc71;
+    }
+    .constructor__layout_menu .constructor__layout_menu_element a
+    {
+        display: block;
+        padding: 20px;
+        font-size: 18px;
+        font-family: "monserrat", sans-serif;
+    }
+    .constructor__layout_hide-menu-btn
+    {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+    #chk:checked ~ .constructor__layout_menu
+    {
+        right: 0;
+    }
+}

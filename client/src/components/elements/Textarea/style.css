@@ -1,0 +1,32 @@
+.textarea{
+    padding: 5px 0 20px 0;
+    transition: .5s;
+}
+
+.textarea_title
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.textarea_subtitle
+{
+    font-size: 15px;
+    color: #333;
+    padding: 0 5px;
+}
+
+.textarea_textarea
+{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.textarea_textarea_box
+{
+    padding: 5px 20px;
+}
