@@ -89,7 +89,7 @@ class ModalTextarea extends Component{
                             <input type="text"
                                    id="adder_modal_ask"
                                    name="ask"
-                                   placeholder="Your name.."
+                                   placeholder="Введите вопрос"
                                    value={this.state.title}
                                    onChange={this.handleTitleChange}
                             />
@@ -103,7 +103,7 @@ class ModalTextarea extends Component{
                             <input type="text"
                                    id="adder_modal_com"
                                    name="com"
-                                   placeholder="Your last name.."
+                                   placeholder="Введите комментарий"
                                    value={this.state.subtitle}
                                    onChange={this.handleSubtitleChange}
                             />
@@ -125,7 +125,7 @@ class ModalTextarea extends Component{
                     </div>
                     <div className="adder_modal_row" >
                         {/*<button onClick={this.handleShowModal}>Submit</button>*/}
-                        <button onClick={this.handleSubmit}>Submit</button>
+                        <button onClick={this.handleSubmit}>Создать</button>
                     </div>
                 </div>
             </>

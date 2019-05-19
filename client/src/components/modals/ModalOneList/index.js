@@ -123,7 +123,7 @@ class ModalOneList extends Component{
                             <input type="text"
                                    id="adder_modal_ask"
                                    name="ask"
-                                   placeholder="Your name.."
+                                   placeholder="Введите вопрос"
                                    value={this.state.title}
                                    onChange={this.handleTitleChange}
                             />
@@ -137,7 +137,7 @@ class ModalOneList extends Component{
                             <input type="text"
                                    id="adder_modal_com"
                                    name="com"
-                                   placeholder="Your last name.."
+                                   placeholder="Введите комментарий"
                                    value={this.state.subtitle}
                                    onChange={this.handleSubtitleChange}
                             />

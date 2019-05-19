@@ -108,35 +108,35 @@ class Adder extends Component{
                 </div>
 
                 <div className={"adder_wrapper " + showAdder}>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalInput}>
+                    <div className="adder_component" onClick={this.handleShowModalInput}>
+                        {/*<button onClick={this.handleShowModalInput}>*/}
                             Input
-                        </button>
+                        {/*</button>*/}
                     </div>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalTextarea}>
-                            Textarea
-                        </button>
+                    <div className="adder_component" onClick={this.handleShowModalTextarea}>
+                        {/*<button onClick={this.handleShowModalTextarea}>*/}
+                        Textarea
+                        {/*</button>*/}
                     </div>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalOneList}>
+                    <div className="adder_component" onClick={this.handleShowModalOneList}>
+                        {/*<button onClick={this.handleShowModalOneList}>*/}
                             List
-                        </button>
+                        {/*</button>*/}
                     </div>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalMultiList}>
-                            Multilist
-                        </button>
+                    <div className="adder_component" onClick={this.handleShowModalMultiList}>
+                        {/*<button onClick={this.handleShowModalMultiList}>*/}
+                            Select
+                        {/*</button>*/}
                     </div>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalProgress}>
+                    <div className="adder_component" onClick={this.handleShowModalProgress}>
+                        {/*<button onClick={this.handleShowModalProgress}>*/}
                             Progress
-                        </button>
+                        {/*</button>*/}
                     </div>
-                    <div className="adder_component">
-                        <button onClick={this.handleShowModalList}>
-                            Drop-down list
-                        </button>
+                    <div className="adder_component" onClick={this.handleShowModalList}>
+                        {/*<button onClick={this.handleShowModalList}>*/}
+                            DD list
+                        {/*</button>*/}
                     </div>
                 </div>
 
