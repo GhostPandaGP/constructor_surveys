@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
 const SurveySchema = new Schema({
 	components: {
 		type: String,
@@ -27,7 +26,5 @@ const SurveySchema = new Schema({
 	},
 	styles: Object
 });
-
 const Survey = mongoose.model("survey", SurveySchema);
-
 module.exports = Survey;
